@@ -1,0 +1,13 @@
+.header-image{
+    width: 400px;
+}
+
+.info-img1, .info-img2, .info-img3, .info-img4{
+    max-width: 250px;
+    object-fit: cover;
+}
+.first-information{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
