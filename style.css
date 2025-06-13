@@ -1,13 +1,174 @@
-.header-image{
-    width: 400px;
+body{
+    font-family: "Nunito", sans-serif;
+    margin:auto;
+}
+
+/*basic style setting (colors, font, background...*/
+.header, .footer{
+    background-color: #1F2937 ;
+    
+}
+.second-quote{
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+.quote-origin{
+    font-style: normal;
+    font-size: 23px;
+    font-weight: bolder;
+}
+.header-title{
+    font-size: 48px;
+    color:#F9FAF8;
+    font-weight: 900;
+}
+.footer{
+     font-size: 18px;
+    color:#F9FAF8;
+}
+a, .header-text{
+    font-size: 18px;
+    color:#F9FAF8;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-size: 24px;
+    color:#F9FAF8;
+    font-weight:bolder;
+}
+button{
+    background-color: #3882F6;
+    border:none;
+    font-size: 18px;
+    color:#F9FAF8;
+    font-weight: bolder;
+    border-radius: 10%;
+    width: fit-content;
+    padding: 5px 20px;
+}
+.information-header{
+    font-size: 36px;
+    color:#1F2937;
+    font-weight: 900;
+}
+.info-text{
+    font-size: 18px;
 }
 
 .info-img1, .info-img2, .info-img3, .info-img4{
-    max-width: 250px;
+    max-width: 200px;
+    height: 200px;
     object-fit: cover;
+    border:#3882F6 5px solid;
+    border-radius: 5%;
 }
+.third-advice{
+    background-color:#3882F6;
+    color:#F9FAF8;
+}
+
+
+/*Flexbox settings*/
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.header-superior{
+    display: flex;
+    justify-content: space-between;
+    padding:20px 10%;
+}
+.anchors{
+    display:flex;
+    gap:20px;
+}
+.header-rest{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+.rest-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-right: 5px;
+}
+.rest-rigth{
+    display: flex;
+    width: 50%;
+    height: auto;
+}
+.header-image{
+    display: flex;
+    width:100%;
+    object-fit: cover;
+    height: auto;
+}
+.header-title{
+    margin-bottom: 2px;
+}
+
 .first-information{
     display: flex;
-    gap: 5px;
+    flex-direction: column;
+    padding: 15px;
+}
+.information-header{
+    display: flex;
+    justify-content: center;
+}
+.info-container{
+    display: flex;
+    justify-content: center;
+    gap:20px;
     flex-wrap: wrap;
+}
+.subtext1, .subtext2, .subtext3, .subtext4{
+   
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.info-text{
+    text-align:center;
+    display: inline;
+}
+
+.second-quote{
+    text-align: center;
+    padding: 50px 150px;
+}
+.quote-origin{
+    text-align: end;
+}
+
+.third-advice{
+    margin: 50px 100px;
+    border-radius: 5px;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.advice-title{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.sign-button{
+    border:2px solid #F9FAF8;
+    margin: auto;
+}
+.advice-text{
+    font-size: 18px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
 }
